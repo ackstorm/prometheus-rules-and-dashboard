@@ -1689,7 +1689,9 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    argocd.argoproj.io/sync-option: Replace=true
     k8s-sidecar-target-directory: /tmp/dashboards/040 - Platform Layer - Kubernetes
+    kustomize.toolkit.fluxcd.io/substitute: disabled
   labels:
     grafana_dashboard: "1"
   name: grafana-dashboard-kubernetes-mixin-cluster-total

@@ -1150,7 +1150,9 @@ data:
 kind: ConfigMap
 metadata:
   annotations:
+    argocd.argoproj.io/sync-option: Replace=true
     k8s-sidecar-target-directory: /tmp/dashboards/050 - Observability - External checks (Blackbox)
+    kustomize.toolkit.fluxcd.io/substitute: disabled
   labels:
     grafana_dashboard: "1"
   name: grafana-dashboard-blackbox-blackbox-exporter

@@ -188,6 +188,8 @@ local kp =
         kind: 'ConfigMap',
         metadata: {
           annotations: {
+            "kustomize.toolkit.fluxcd.io/substitute": "disabled",
+            "argocd.argoproj.io/sync-option": "Replace=true",
             "k8s-sidecar-target-directory": "/tmp/dashboards/${dashboard_path}",
           },
           labels: {
@@ -240,4 +242,3 @@ cd ${TOP}/${MANIFESTS}/alerts
 kustomize init --autodetect --recursive
 cd ${TOP}/${MANIFESTS}/dashboards
 kustomize init --autodetect --recursive
-
