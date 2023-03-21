@@ -1,0 +1,52 @@
+{
+    "mixins": [
+        {
+            "name": "prometheus",
+            "source": "https://github.com/prometheus/prometheus",
+            "subdir": "documentation/prometheus-mixin",
+            "dashboard_path": "050 - Observability - Prometheus"
+        },
+        {
+            "name": "alertmanager",
+            "source": "https://github.com/prometheus/alertmanager",
+            "subdir": "doc/alertmanager-mixin",
+            "dashboard_path": "050 - Observability - Prometheus"
+        },
+        {
+            "name": "node-exporter",
+            "source": "https://github.com/prometheus/node_exporter",
+            "subdir": "docs/node-mixin",
+            "dashboard_path": "010 - System metrics - Node exporters"
+        },
+        {
+            "name": "kubernetes-mixin",
+            "source": "https://github.com/kubernetes-monitoring/kubernetes-mixin",
+            "subdir": "",
+            "dashboard_path": "040 - Platform Layer - Kubernetes"
+        },
+        {
+            "name": "kube-state-metrics",
+            "source": "https://github.com/kubernetes/kube-state-metrics",
+            "subdir": "jsonnet/kube-state-metrics-mixin",
+            "dashboard_path": "040 - Platform Layer - Kubernetes"
+        },
+        {
+            "name": "thanos",
+            "source": "https://github.com/thanos-io/thanos",
+            "subdir": "mixin",
+            "dashboard_path": "050 - Observability - Prometheus"
+        },
+        {
+            "name": "prometheus-operator",
+            "source": "https://github.com/prometheus-operator/prometheus-operator",
+            "subdir": "jsonnet/mixin",
+            "dashboard_path": "050 - Observability - Prometheus"
+        },
+        {
+            "name": "blackbox",
+            "source": "https://github.com/adinhodovic/blackbox-exporter-mixin",
+            "subdir": "",
+            "dashboard_path": "050 - Observability - External checks (Blackbox)"
+        }
+    ]
+}

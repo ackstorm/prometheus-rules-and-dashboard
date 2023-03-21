@@ -1,0 +1,6 @@
+tmp/
+*~
+build/
+myconfig
+myconfig.libsonnet
+mybuild.libsonnet
